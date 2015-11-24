@@ -24,3 +24,22 @@ public class pupil
         String[] rowItems = dataItems.split(",");
         
         vName = rowItems[0];
+        vSurname = rowItems[1];
+        vScore = rowItems[2];
+        
+    }
+    
+    public String writeDetails()
+    {
+        String pupilData = "";
+        pupilData = pupilData.concat(vName);
+        pupilData = pupilData.concat(",");
+        pupilData = pupilData.concat(vSurname);
+        pupilData = pupilData.concat(",");
+        pupilData = pupilData.concat(vScore);
+        return pupilData;
+    } 
+     
+   
+}   
+       
