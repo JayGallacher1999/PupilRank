@@ -1,33 +1,26 @@
 
-/**
- * Write a description of class Pupil here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Pupil
-{
-    // instance variables - replace the example below with your own
-    private int x;
+import java.io.*;
+import java.util.*;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+import java.lang.Math.*;
 
-    /**
-     * Constructor for objects of class Pupil
-     */
+public class pupil
+{
+    private String vName;
+    private String vSurname;
+    private String vScore;
+    
     public Pupil()
     {
-        // initialise instance variables
-        x = 0;
+        vName = "";
+        vSurname = "";
+        vScore = "";
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public void readDetails (String dataItems)
     {
-        // put your code here
-        return x + y;
-    }
-}
+        String[] rowItems = dataItems.split(",");
+        
+        vName = rowItems[0];
